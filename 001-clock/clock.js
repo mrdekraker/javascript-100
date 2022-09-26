@@ -2,11 +2,16 @@ const minHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
 const secondHand = document.querySelector('.second-hand');
 const time = document.querySelector('.time');
+const date = document.querySelector('.date');
 
 function runTime() {
   const now = new Date();
 
   time.innerHTML = now.toLocaleTimeString();
+  // format date to read "month day, year"
+  date.innerHTML = now.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+  // date.innerHTML = now.toLocaleDateString();
+
 
 
   const seconds = now.getSeconds();

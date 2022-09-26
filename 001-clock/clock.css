@@ -21,11 +21,11 @@ header {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 75%;
+  width: 50%;
   text-align: center;
   margin-top: 3rem;
   border: 1px solid white;
-  font-size: 7rem;
+  font-size: 5.5rem;
   color: white;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
@@ -37,7 +37,7 @@ header {
   height: 30rem;
   border: 10px solid white;
   border-radius: 50%;
-  margin: 50px auto;
+  margin: 250px auto;
   position: relative;
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,

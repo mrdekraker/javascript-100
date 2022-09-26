@@ -1,0 +1,18 @@
+.header-nameplate {
+  font-family: "Poppins", sans-serif;
+  margin-left: 20px;
+}
+
+.header-nameplate span {
+  display: inline-flex;
+}
+
+.header-nameplate span:nth-child(even) {
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
+  letter-spacing: -1em;
+}
+
+.header-nameplate:hover span:nth-child(even) {
+  letter-spacing: 2px;
+}
