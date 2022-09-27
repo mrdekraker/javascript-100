@@ -1,0 +1,180 @@
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+  background: #fffbd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #b20a2c,
+    #fffbd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #b20a2c,
+    #fffbd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* NAVBAR STYLES */
+.navbar-brand {
+  color: white;
+}
+
+#header-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header-nameplate {
+  /* serif font stack */
+  font-family: "Playfair Display", Georgia, Cambria, "Times New Roman", Times,
+    serif;
+  /* font-weight: bold; */
+  color: white;
+  margin-left: 20px;
+}
+
+.header-nameplate span {
+  display: inline-flex;
+}
+
+.header-nameplate span:nth-child(even) {
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
+  letter-spacing: -1em;
+}
+
+.header-nameplate:hover span:nth-child(even) {
+  letter-spacing: 2px;
+  /* letter-spacing: 0; */
+}
+
+.nav-link {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.navbar a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 28px;
+  padding: 10px 15px;
+  letter-spacing: 1.3px;
+  display: block;
+  position: relative;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.navbar a:hover::after,
+.navbar a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+.navbar a::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.navbar a:hover::after,
+.navbar a:focus::after {
+  transform: scale(1);
+}
+
+.navbar-toggler {
+  margin: 0 auto;
+  color: white;
+}
+
+#nav-toggle-button {
+  background-color: white;
+}
+
+/* !MAIN STYLING */
+.hero-img {
+  background-image: url("/assets/img/mdek.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.hero-container {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+main {
+  color: white;
+}
+
+.title {
+  font-family: "Playfair Display", Georgia, Cambria, "Times New Roman", Times,
+    serif;
+}
+
+/* PROJECTS STYLING */
+.projects {
+  background: rgba(178, 10, 44, 0.5);
+  color: white;
+  border: 1px solid white;
+  font-size: 1.4rem;
+}
+
+.projects a {
+  color: white;
+  text-decoration: none;
+}
+
+.projects a:hover {
+  text-decoration: underline;
+}
+
+/* !FOOTER */
+footer {
+  font-size: 1.3rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 0;
+}
+
+.footer-nameplate {
+  font-family: "Playfair Display", Georgia, Cambria, "Times New Roman", Times,
+    serif;
+  color: white;
+  font-size: 2rem;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-right: 30px;
+}
+
+.links a:hover {
+  color: rgb(226, 226, 226);
+}
