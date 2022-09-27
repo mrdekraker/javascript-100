@@ -19,17 +19,18 @@ body {
 header {
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50%;
+  left: 25%;
   text-align: center;
+  margin: 0 auto;
   margin-top: 3rem;
   border: 1px solid white;
-  font-size: 5.5rem;
+  font-size: 5rem;
   color: white;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
 }
+
+/* clock is fixed below header */
 
 .clock {
   background: rgba(169, 169, 169, 0.35);

@@ -4,71 +4,139 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>List of JavaScript Projects</title>
+    <title>100 Days of JavaScript</title>
     <!-- BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous" />
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Raleway:wght@300;400&display=swap"
+      rel="stylesheet" />
     <!-- MY CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="header-wrapper">
+    <header class="container-fluid" id="header-wrapper">
+      <nav class="navbar navbar-expand-sm">
         <div class="header-nameplate">
           <h1>
-            <span id="initial">M</span><span>ark</span>
-            <span id="initial">D</span><span>eKraker</span>
+            <span class="initial">M</span><span>ark</span>
+            <span class="initial">D</span><span>eKraker</span>
           </h1>
         </div>
-
-        <nav class="navbar navbar-expand-md">
-          <div class="container-fluid">
-            <button
-              id="nav-toggle-button"
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link" href="#about">About Me</a>
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-                <a class="nav-link" href="#contact">Contact</a>
-                <a href="https://www.instagram.com/mdek_strongdad">
-                  <i class="bi bi-instagram"> </i>
-                </a>
-                <a href="http://github.com/mrdekraker">
-                  <i class="bi bi-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto mx-5">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="http://github.com/mrdekraker"
+                >GitHub</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-      <ul class="project-list">
-        <li class="projects">001. Clock</li>
-        <li class="projects">002. Coming Soon</li>
-        <li class="projects">003. Coming Soon</li>
-        <li class="projects">004. Coming Soon</li>
-        <li class="projects">005. Coming Soon</li>
-      </ul>
+      <div class="hero">
+        <div class="container hero-container">
+          <div class="row">
+            <div class="col col-md-6 py-5">
+              <h1 class="title">100 Days of JavaScript</h1>
+              <p>
+                This is my personal challenge to learn JavaScript. I will be
+                updating this site daily with my progress. If you would like to
+                get started on your own, please click the button! Also, please
+                feel free to reach out to me on GitHub or Instagram!
+              </p>
+              <a href="https://www.100daysofcode.com/" class="btn btn-danger"
+                >Get Started</a
+              >
+              <a href="http://github.com/mrdekraker" class="btn btn-danger"
+                >My GitHub <i class="bi bi-github"></i
+              ></a>
+            </div>
+            <div class="col col-md-6 hero-img"></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="project-list" id="projects">
+        <div class="container">
+          <h2 class="text-left py-3">Projects</h2>
+          <div class="row text-center">
+            <div class="projects col py-4">001 - Clock</div>
+            <div class="projects col py-4">Coming Soon.</div>
+            <div class="projects col py-4">Coming Soon.</div>
+            <div class="projects col py-4">Coming Soon.</div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- !FOOTER -- CONTACT ME-->
+    <footer class="container-fluid">
+      <div class="row footer">
+        <div class="col col-xs-6 col-footer">
+          <div class="footer-nameplate text-left">Get In Touch With Me</div>
+        </div>
+        <div class="col col-xs-6 col-footer">
+          <div class="links text-end">
+            <span class="mx-3 px-1 py-5">
+              <a href="http://github.com/mrdekraker"
+                ><i class="bi bi-github"></i
+              ></a>
+            </span>
+            <span class="mx-3 px-1 py-5">
+              <a href="https://www.instagram.com/mdek_strongdad"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </span>
+            <span class="mx-3 px-1 py-5">
+              <a href="https://www.linkedin.com/in/mark-dekraker-aa359528/">
+                <i class="bi bi-linkedin"> </i
+              ></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- BOOTSTRAP JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"></script>
+    <!-- MY JS -->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
