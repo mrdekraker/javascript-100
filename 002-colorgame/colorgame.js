@@ -5,7 +5,6 @@ const resetBtn = document.querySelector(`#reset`);
 const nav = document.querySelector('nav');
 const colors = [];
 const boxes = document.querySelectorAll('.box');
-const boxContainer = document.querySelector('.box-container');
 let numBoxes = 3;
 let pickedColor;
 
