@@ -19,9 +19,9 @@ body {
 header {
   position: fixed;
   top: 0;
-  left: 25%;
+  left: 33%;
   text-align: center;
-  margin: 0 auto;
+  padding: 25px;
   margin-top: 3rem;
   border: 1px solid white;
   font-size: 5rem;
