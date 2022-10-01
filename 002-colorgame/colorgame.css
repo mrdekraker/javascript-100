@@ -1,0 +1,112 @@
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: "Playfiar Display", Georgia, Cambria, "Times New Roman", Times,
+    serif;
+  color: black;
+  background: #232323;
+}
+
+nav {
+  border: 10px solid, red;
+  font-size: 48px;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  padding: 25px;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.button-row {
+  justify-content: center;
+  font-size: 18px;
+}
+
+.gradient-animation {
+  background: linear-gradient(-90deg, #be0606, #bc3066, #2b1687, #27ecbe);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#reset {
+  width: 15%;
+  border: none;
+  height: 40px;
+  background-color: darkred;
+  color: white;
+}
+
+.difficulty {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 15%;
+  border: none;
+  height: 40px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+#color-display {
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
+  font-weight: thin;
+  color: white;
+  padding: 20px;
+}
+
+.box {
+  margin: 20px auto;
+  height: 150px;
+  max-width: 150px;
+  border-radius: 12%;
+}
+
+.hide {
+  display: none;
+}
+
+.game-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.selected {
+  color: white;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+span {
+  font-size: 24px;
+}

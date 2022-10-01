@@ -145,12 +145,18 @@ main {
   font-size: 1.4rem;
 }
 
+.projects:hover {
+  background: rgba(178, 10, 44, 0.8);
+}
+
 .projects a {
   color: white;
   text-decoration: none;
 }
 
 .projects a:hover {
+  font-size: 1.8rem;
+  font-style: italic;
   text-decoration: underline;
 }
 
