@@ -1,5 +1,6 @@
 const jokeText = document.querySelector(`#joke`);
 const nextJoke = document.querySelector('#nextJoke');
+const dot = document.querySelector(`.dot`);
 const buttonText = [
   `UGH.`,
   `OMGDAD🤦`,
@@ -7,6 +8,8 @@ const buttonText = [
   `Seriously?`,
   `🤦`,
   `Why?`,
+  `Why me?`,
+  `😐`,
 ];
 
 async function fetchJoke() {
@@ -27,6 +30,7 @@ const handleClick = async function () {
 };
 
 const randomBtnText = function () {
+  dot.innerHTML = ``;
   const randomText = buttonText[Math.floor(Math.random() * buttonText.length)];
   return randomText;
 };
