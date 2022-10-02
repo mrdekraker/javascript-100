@@ -12,9 +12,12 @@ My goal is to get a much better understanding of JavaScript building from (mostl
 
 2. Day 2: Saturday, October 1, 2022. I finally finished this game, which took me a long longer than I had hoped. I started it Sept 27th, but had bootcamp projects due, as well as some JS issues with generating boxes to the .box-container like I wanted. Perhaps I'll redo this one in the future fully generating it to the DOM via JS like I originally planned.
 
+3. Day 3: Sunday, Oct 2, 2022. I pulled together a simple API fetch from [https://icanhazdadjoke].
+
 # CREDITS/TUTORIALS
 
 I will update this to reflect where I got my tutorials/project Ideas come from.
 
 - 001 clock: WesBos 30 Day JS
 - 002 colorgame: Colt Steel Udemy course
+- 003 OMGDAD.: WesBos Javascript Course
